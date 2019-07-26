@@ -38,19 +38,17 @@
       </div>
     </div>
     <div class="slider">
-      <div class="wrapper">
-        <div class="slider__wrapper">
-          <div class="slider__btn prev-btn"></div>
-          <div class="slider__img img1"></div>
-          <div class="slider__img img2"></div>
-          <div class="slider__img img3"></div>
-          <div class="slider__img img4"></div>
-          <div class="slider__img img5"></div>
-          <div class="slider__img img6"></div>
-          <div class="slider__img img7"></div>
-          <div class="slider__btn next-btn"></div>
-        </div>
+      <div class="slider__arrow slider__left"></div>
+      <div class="slider__container">
+        <div class="slider__item img1"></div>
+        <div class="slider__item img2"></div>
+        <div class="slider__item img3"></div>
+        <div class="slider__item img4"></div>
+        <div class="slider__item img5"></div>
+        <div class="slider__item img6"></div>
+        <div class="slider__item img7"></div>
       </div>
+      <div class="slider__arrow slider__right"></div>
     </div>
     <div class="lottery">
       <div class="wrapper">
@@ -182,52 +180,74 @@
             Необходимо выбрать всего 5 позиций в карточке
           </div>
           <div class="lottery__buttons">
-              <button class="btn-blue btn"  id ="clear-field-button">Очистить</button>
-              <button class="btn-green btn" disabled id ="game-start-button">Мне повезет</button>
-          </div>          
+            <button class="btn-blue btn" id="clear-field-button">
+              Очистить
+            </button>
+            <button class="btn-green btn" disabled id="game-start-button">
+              Мне повезет
+            </button>
+          </div>
         </div>
-
       </div>
     </div>
     <div class="modal">
-        <div class="modal__content">
-            <div class="modal__content-text"></div>
-            <button class="btn btn-green" id = "modal_btn">OK</button>
-        </div>
+      <div class="modal__content">
+        <div class="modal__content-text"></div>
+        <button class="btn btn-green" id="modal_btn">OK</button>
+      </div>
     </div>
     <footer class="footer">
-        <div class="wrapper">
-            <div class="footer_wrapper">
-                <div class="footer__content">
-                  <h2>Лотерея</h2>
-                  <a href="#">Правила</a>
-                  <a href="#">Законодательство</a>
-                  <a href="#">История</a>
-                </div>
-                <div class="footer__content">
-                  <h2>Интересности</h2>
-                  <a href="#">Очень интересно</a>
-                  <a href="#">Супер интересно</a>
-                  <a href="#">Потрясающе интересно</a>
-                </div>
-                <div class="footer__content">
-                  <h2>Контакты</h2>
-                  <p>тел: 044 555-55-55</p>
-                  <p>email: lottery@lottery.com</p>
-                  <p>Киев</p>
-                </div>
-            </div>
-            <div class="footer__social">
-                <a href="#"><img src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-twitter.svg" alt="Twitter Logo"></a>
-                <a href="#"><img src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-facebook.svg" alt="Facebook Logo"></a>
-                <a href="#"><img src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-instagram.svg" alt="Instagram Logo"></a>
-                <a href="#"><img src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-youtube.svg" alt="Youtube Logo"></a>
-                <a href="#"><img src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-email.svg" alt="Email Logo"></a>
-
-            </div>
+      <div class="wrapper">
+        <div class="footer_wrapper">
+          <div class="footer__content">
+            <h2>Лотерея</h2>
+            <a href="#">Правила</a>
+            <a href="#">Законодательство</a>
+            <a href="#">История</a>
+          </div>
+          <div class="footer__content">
+            <h2>Интересности</h2>
+            <a href="#">Очень интересно</a>
+            <a href="#">Супер интересно</a>
+            <a href="#">Потрясающе интересно</a>
+          </div>
+          <div class="footer__content">
+            <h2>Контакты</h2>
+            <p>тел: 044 555-55-55</p>
+            <p>email: lottery@lottery.com</p>
+            <p>Киев</p>
+          </div>
         </div>
-        <script src="./js/index.js"></script>
+        <div class="footer__social">
+          <a href="#"
+            ><img
+              src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-twitter.svg"
+              alt="Twitter Logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-facebook.svg"
+              alt="Facebook Logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-instagram.svg"
+              alt="Instagram Logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-youtube.svg"
+              alt="Youtube Logo"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://igao-prod-herokuapp-com.global.ssl.fastly.net/msl-website-assets/icon-social-email.svg"
+              alt="Email Logo"
+          /></a>
+        </div>
+      </div>
+      <script src="./js/slider.js"></script>
+      <script src="./js/lottery.js"></script>
     </footer>
-
   </body>
 </html>
